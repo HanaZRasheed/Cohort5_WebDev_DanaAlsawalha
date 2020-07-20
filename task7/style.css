@@ -1,0 +1,139 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 0.9em;
+    color:white;
+    font-family: 'Mukta', sans-serif;
+}
+
+#menu-bar{
+    background-color: #3C3C3C;
+    color: lightgray;
+       padding: 4px; 
+}
+#menu-bar div{
+    display: inline-block;
+}
+
+#menu-bar .icon{
+width:25px;
+color:#23A7F2;
+margin-right: 7px;
+}
+
+#menu-bar .center-text{
+    margin-right: 0px;
+    align-self: left;
+}
+#menu-bar .menu-items{
+    width: 70%;
+    text-align: left;
+}
+#menu-bar .menu-items ul{
+    padding: 0px;
+    margin:0px;
+}
+
+#menu-bar .menu-items ul li{
+    display: inline-block;
+}
+
+#menu-bar .menu-items ul li a{
+    text-decoration: none ;
+    margin-right: 10px;
+    color: #CCCCC3;
+}
+
+#menu-bar .right-icons i{
+    text-align: right;
+    padding-left: 32px;
+    margin-right: 2px;
+    margin-left: 2px;
+    text-decoration: none;
+    color: #CCCCC3;
+    font-size: 15px;
+}
+
+#center-container{
+    clear:both;
+    height: 90vh;
+    background-color: #252526;   
+}
+
+#center-container .toolbar{
+display: inline-block;
+width:30px;
+background-color: #333333;
+height: 98%;
+padding: 5px;
+}
+
+#center-container .toolbar i{
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: rgba(255, 248, 220, 0.425);
+    font-size: 23px;   
+} 
+
+i .far{
+    margin-bottom: 100px;
+}
+
+#center-container .explorer{
+    display: inline-block;
+    width:12%;
+    background-color: #252526;
+    vertical-align: top; 
+    height: 96%;
+    color: rgba(255, 248, 220, 0.733);
+    font-size: 12px;
+    padding: 10px;
+}
+
+#center-container .opened-files{
+    display: inline-block;
+    width: 83%;
+    background: #252526;
+    vertical-align: top; 
+    height: 100%;
+}
+
+#file1{
+    background: #1E1E1E;
+    border-style: none;
+    color: cornsilk;
+    width: 170vh;
+    height: 272px;
+    padding: 5px;
+}
+#file2{
+    background: #1E1E1E;
+    border-style: none;
+    color: cornsilk;
+    width: 170vh;
+    height: 278px;
+}
+
+#center-container .opened-files .opened-file{
+    width: 100%;
+    height: 50%;
+    border-bottom: 1px solid gray;
+}
+
+footer{
+    background-color: #007ACC;
+    font-size: 0.92em;
+    padding: 1px;
+    word-spacing: 10px;
+    text-align: right;
+}
+
+.blue-text{
+color: blue;
+}
+
+
