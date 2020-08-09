@@ -1,0 +1,125 @@
+body {
+    font-family: '.Inquiry-about-requests', Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    height: 109vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    width: 87%;
+    height: 100%;
+    border: 1px solid rgb(226, 221, 221);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    box-shadow: 5px 11px 15px #858282;
+}
+
+.container .rightSide{
+    width: 30%;
+    height: 100%;
+    background-color: #F4F5F5;
+}
+
+.container .rightSide .form {
+    height: 55vh;
+    margin-bottom: 20px;
+}
+
+.container .rightSide .header {
+    background-color: #24465D;
+    display: flex;
+    justify-content: right;
+    color: white;
+    padding-right: 25px;
+}
+
+.container .rightSide .form .form-element {
+   display: flex;
+   align-items: flex-start;
+   flex-direction: column;
+   padding: 10px;
+   margin-bottom: 10px;
+}
+
+.form-element label {
+    margin-bottom: 2px;
+}
+
+.form-element input {
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6px;
+}
+
+.form-element select {
+    width: 85%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6px;
+}
+
+.container .rightSide.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px;
+}
+
+.container .rightSide .footer input, .button {
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    height: 30px;
+    background-color: #5CB85C;
+    color: white;
+    font-family: 'Tajawal', sans-serif;
+}
+
+.container.rightSide .footer a {
+    color: rgb(34, 34, 34);
+}
+
+.container .liftSide {
+    width: 70%;
+    height: 100%;
+    background-color: #F4F5F5;
+    border-right: 1px solid #ccc;
+}
+
+.container .liftSide .header {
+    background-color: #24465D;
+    display: flex;
+    justify-content: right;
+    color: white;
+    padding-right: 25px;
+}
+
+.container .liftSide .form {
+    height: 55vh;
+    padding: 16px;
+}
+
+.container .liftSide .form .row {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-bottom: 16px;
+}
+
+.container .liftSide .form .row .form-element {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.container .liftSide .form .row .form-element select {
+    width: 250px;
+}
+
+#txt {
+    display: flex;
+    flex-direction: column;
+}

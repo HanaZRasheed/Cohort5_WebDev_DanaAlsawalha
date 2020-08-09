@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الشاشة الرئيسية</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <script>
+        function natNum() {
+            var value = document.getElementById("natNum").value;
+            if ((value.length > 10) || value.isEmpty()) {
+                alert("you must fill the feild and it be less than 10 numbers");
+            }
+        }
+        function natNum2() {
+            var value = document.getElementById("natNum2").value;
+            if (value.length > 10) {
+                alert("must be less than 10 numbers");
+            }
+        }
+        function backNum() {
+            var value = document.getElementById("backNum").value;
+            if (value.length > 32) {
+                alert("must be less than 32 numbers");
+            }
+        }
+        function ValidateEmail() {
+            if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(getElementById("email").value)) {
+                return (true)
+            }
+            alert("You have entered an invalid email address!")
+            return (false)
+        }
+
+    </script>
+
+    <div class="container">
+        <div class="rightSide">
+            <div class="header">
+                <h3>استعلام عن الطلبات</h3>
+            </div>
+            <div class="form">
+                <div class="form-element">
+                    <label>الرقم المرجعي</label>
+                    <input type="text" required id="backNum" />
+                </div>
+                <div class="form-element">
+                    <label>الجنسية</label>
+                    <select required>
+                        <option selected>أردني</option>
+                        <option selected>غير ذلك</option>
+                    </select>
+                </div>
+                <div class="form-element">
+                    <label>الرقم الوطني</label>
+                    <input type="text" required id="natNum" />
+                </div>
+            </div>
+            <div class="form-element">
+                <label>الكود المرئي</label><br>
+                <img src="Capture.PNG" /><br>
+                <input type="text" required />
+            </div>
+            <div class="footer">
+                <a href="#">نسيت الرقم المرجعي</a>
+                <button class="button" onclick="natNum(), backNum()">استعلام عن الطلبات</button>
+            </div>
+        </div>
+        <div class="liftSide">
+            <div class="header">
+                <h3>تقديم الطلبات</h3>
+            </div>
+            <div class="form">
+                <div class="row">
+                    <div class="form-element">
+                        <label>الجنسية</label>
+                        <select>
+                            <option selected>أردني</option>
+                            <option selected>غير ذلك</option>
+                        </select>
+                    </div>
+                    <div class="form-element">
+                        <label>الرقم الوطني</label>
+                        <input type="text" required id="natNum2" />
+                    </div>
+                    <div class="form-element">
+                        <label>تاريخ الميلاد</label>
+                        <input type="date" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-element">
+                        <label>لغة الشهادة المطلوبة</label>
+                        <select>
+                            <option selected>--اختر--</option>
+                            <option>عربي</option>
+                            <option>انجليزي</option>
+                        </select>
+                    </div>
+                    <div class="form-element">
+                        <label>الاسم الأول</label>
+                        <input type="text" />
+                    </div>
+                    <div class="form-element">
+                        <label>اسم العائلة</label>
+                        <input type="text" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-element">
+                        <label>الغاية من تقديم الشهادة</label>
+                        <select>
+                            <option selected>--اختر--</option>
+                            <option>انتخابات</option>
+                            <option>جهات خارجية</option>
+                            <option>جهات داخلية</option>
+                        </select>
+                    </div>
+                    <div class="form-element">
+                        <label>تصدر من</label>
+                        <select>
+                            <option selected>--اختر--</option>
+                            <option>انتخابات</option>
+                            <option>جهات خارجية</option>
+                            <option>جهات داخلية</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row" id="txt">
+                    <h5>أرجو إعلامي من خلال :</h5>
+                    <small>يرجى إدخال رقم هاتف صحيح ليتم إعلامكم بمراحل إصدار شهادة عدم المحكومية</small>
+                </div>
+                <div class="row">
+                    <div class="form-element">
+                        <label>رسالة قصيرة</label>
+                        <input type="text" style="width: 300px;" />
+                    </div>
+                    <div class="form-element">
+                        <label>البريد الالكتروني</label>
+                        <input type="text" style="width: 300px;" id="email" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-element">
+                        <label>الكود المرئي</label><br>
+                        <img src="p.PNG" /><br>
+                        <input type="text" required />
+                    </div>
+                </div>
+                <div class="row">
+                    <button class="button" onclick="natNum2(),ValidateEmail()">تقديم الطلب</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
