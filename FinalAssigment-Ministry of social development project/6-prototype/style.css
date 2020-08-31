@@ -52,21 +52,9 @@ nav{
     font-family: 'Tajawal', sans-serif;
 }
 
-nav a{
-    color:white;    
-    text-decoration: none;
-    font-size: 1.3em;
-    margin: 0px;
-}
-nav a:hover{
-    text-decoration: underline;
-    background-color: #db5d66;
-    background-size: cover;
-}
-
 li{
     display: inline-block;
-    padding-right: 40px;
+    padding-left: 50px;
 }
 
 .navbar .dropdown i{
@@ -88,7 +76,6 @@ li{
 }
 
 .dropdown {
-  float: right;
   overflow: hidden;
 }
 
