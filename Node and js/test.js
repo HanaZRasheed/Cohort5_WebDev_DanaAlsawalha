@@ -9,3 +9,7 @@ function myFunction2(text){
     var val = document.getElementById("textInp").value;
     document.getElementById("text").innerHTML = val;
 }
+
+function sayHello(name) {
+  document.write(`Hello ${name}`);
+}
